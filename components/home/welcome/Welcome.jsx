@@ -5,7 +5,7 @@ import {
   TextInput,
   TouchableOpacity,
   Image, 
-  Flatlist
+  FlatList
  } from 'react-native';
 import { useRouter } from 'expo-router';
 import styles from './welcome.style';
@@ -44,7 +44,7 @@ const Welcome = () => {
       </View>
 
       <View style={styles.tabsContainer}>
-        <Flatlist 
+        <FlatList 
           data={jobTypes}
           renderItem={({ item }) => (
             <TouchableOpacity
