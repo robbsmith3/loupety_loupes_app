@@ -11,7 +11,7 @@ const Popularjobs = () => {
   const isLoading = false;
   const error = false;
 
-  return (
+  /*return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Popular Jobs</Text>
@@ -40,7 +40,7 @@ const Popularjobs = () => {
         )}
       </View>
     </View>
-  )
+  )*/
 }
 
 export default Popularjobs
