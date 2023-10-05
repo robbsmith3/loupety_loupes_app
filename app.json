@@ -5,7 +5,10 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      {
+        "origin": "./assets"
+      }
     ],
     "name": "loupety_loupes",
     "slug": "loupety_loupes"
