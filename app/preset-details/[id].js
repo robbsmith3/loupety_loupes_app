@@ -22,7 +22,7 @@ import useFetch from "../../hook/useFetch";
 
 const tabs = ["About", "Qualifications", "Responsibilities"];
 
-const JobDetails = () => {
+const PresetDetails = () => {
   const params = useSearchParams();
   const router = useRouter();
 
@@ -126,4 +126,4 @@ const JobDetails = () => {
   );
 };
 
-export default JobDetails;
+export default PresetDetails;
