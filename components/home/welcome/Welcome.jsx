@@ -10,6 +10,7 @@ import {
 import { useRouter } from 'expo-router';
 import styles from './welcome.style';
 import { icons, SIZES } from '../../../constants';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const jobTypes = ["Preset 1", "Preset 2", "Preset 3"]
 
@@ -20,8 +21,8 @@ const Welcome = () => {
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>¡Hola El Toston!</Text>
-        <Text style={styles.welcomeMessage}>Select your preset</Text>
+        <Text style={styles.userName}>Hello Robb,</Text>
+        <Text style={styles.welcomeMessage}>Select your preset:</Text>
       </View>
 
       {/* <View style={styles.searchContainer}>
@@ -61,7 +62,7 @@ const Welcome = () => {
           contentContainerStyle={{ rowGap: SIZES.xLarge}}
           vertical
         />
-      </View>
+      </View>  
     </View>
   )
 }

@@ -18,7 +18,7 @@ const Home = () => {
                         <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
                     ),
                     headerRight : () => (
-                        <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
+                        <ScreenHeaderBtn iconUrl={images.profile} dimension="95%" />
                     ),
                     headerTitle: ""
                 }}
@@ -28,11 +28,10 @@ const Home = () => {
                 <View 
                     style={{
                         flex: 1,
-                        padding: SIZES.medium
+                        padding: SIZES.xxLarge
                     }}
                 >
-                    <Welcome
-                    />
+                    <Welcome  />
                     <Popularjobs />
                     <Nearbyjobs />
                 </View>

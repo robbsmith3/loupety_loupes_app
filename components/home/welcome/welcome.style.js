@@ -1,3 +1,5 @@
+//Majority of code was found online from a YouTube video
+
 import { StyleSheet } from "react-native";
 
 import { COLORS, FONT, SIZES } from "../../../constants";
@@ -7,7 +9,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   userName: {
-    fontFamily: FONT.regular,
+    fontFamily: FONT.regular,       //altered some of the design features of the repo found online
     fontSize: SIZES.xLarge,
     color: COLORS.secondary,
     textAlign: "center"
@@ -63,12 +65,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: SIZES.large,
     borderRadius: SIZES.xxLarge,
     borderWidth: 2,
-    borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray,
+    borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray2,
   }),
   tabText: (activeJobType, item) => ({
     textAlign: "center",
-    fontFamily: FONT.xxLarge,
-    color: activeJobType === item ? COLORS.secondary : COLORS.gray,
+    fontFamily: FONT.xLarge,
+    color: activeJobType === item ? COLORS.secondary : COLORS.black,
   }),
 });
 
