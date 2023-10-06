@@ -24,7 +24,7 @@ const Welcome = () => {
         <Text style={styles.welcomeMessage}>Select your preset</Text>
       </View>
 
-      <View style={styles.searchContainer}>
+      {/* <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
             style={styles.searchInput}
@@ -41,7 +41,7 @@ const Welcome = () => {
             style={styles.searchBtnImage}
           />
         </TouchableOpacity>
-      </View>
+      </View> */}
 
       <View style={styles.tabsContainer}>
         <FlatList 
@@ -58,8 +58,8 @@ const Welcome = () => {
             </TouchableOpacity>
           )}
           keyExtractor={item => item}
-          contentContainerStyle={{ columnGap: SIZES.small}}
-          horizontal
+          contentContainerStyle={{ rowGap: SIZES.xLarge}}
+          vertical
         />
       </View>
     </View>

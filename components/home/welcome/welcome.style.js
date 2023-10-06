@@ -8,14 +8,16 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontFamily: FONT.regular,
-    fontSize: SIZES.large,
+    fontSize: SIZES.xLarge,
     color: COLORS.secondary,
+    textAlign: "center"
   },
   welcomeMessage: {
     fontFamily: FONT.bold,
-    fontSize: SIZES.xLarge,
+    fontSize: SIZES.xxLarge,
     color: COLORS.primary,
     marginTop: 2,
+    textAlign: "center"
   },
   searchContainer: {
     justifyContent: "center",
@@ -54,18 +56,19 @@ const styles = StyleSheet.create({
   },
   tabsContainer: {
     width: "100%",
-    marginTop: SIZES.medium,
+    marginTop: SIZES.xxLarge,
   },
   tab: (activeJobType, item) => ({
-    paddingVertical: SIZES.small / 2,
-    paddingHorizontal: SIZES.small,
-    borderRadius: SIZES.medium,
-    borderWidth: 1,
-    borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray2,
+    paddingVertical: SIZES.large,
+    paddingHorizontal: SIZES.large,
+    borderRadius: SIZES.xxLarge,
+    borderWidth: 2,
+    borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray,
   }),
   tabText: (activeJobType, item) => ({
-    fontFamily: FONT.medium,
-    color: activeJobType === item ? COLORS.secondary : COLORS.gray2,
+    textAlign: "center",
+    fontFamily: FONT.xxLarge,
+    color: activeJobType === item ? COLORS.secondary : COLORS.gray,
   }),
 });
 
