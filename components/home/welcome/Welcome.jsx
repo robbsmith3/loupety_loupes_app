@@ -12,17 +12,17 @@ import styles from './welcome.style';
 import { icons, SIZES } from '../../../constants';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const jobTypes = ["Preset 1", "Preset 2", "Preset 3"]
+const presetTypes = ["Preset 1", "Preset 2", "Preset 3"]
 
 const Welcome = () => {
   const router = useRouter();
-  const [activeJobType, setActiveJobType] = useState('Full-time')
+  const [activePresetType, setActivePresetType] = useState('Full-time')
 
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello Robb,</Text>
-        <Text style={styles.welcomeMessage}>Select your preset:</Text>
+        <Text style={styles.userGreeting}>Hello Robb,</Text>
+        <Text style={styles.presetMessage}>Select your preset:</Text>
       </View>
 
       {/* <View style={styles.searchContainer}>
@@ -46,16 +46,16 @@ const Welcome = () => {
 
       <View style={styles.tabsContainer}>
         <FlatList 
-          data={jobTypes}
+          data={presetTypes}
           renderItem={({ item }) => (
             <TouchableOpacity
-              style={styles.tab(activeJobType, item)}
+              style={styles.tab(activePresetType, item)}
               onPress={() => {
-                setActiveJobType(item);
+                setActivePresetType(item);
                 router.push(`/search/${item}`)
               }}
             >
-              <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
+              <Text style={styles.tabText(activePresetType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
           keyExtractor={item => item}
