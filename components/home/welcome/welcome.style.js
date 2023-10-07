@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
   },
-  userName: {
+  userGreeting: {
     fontFamily: FONT.regular,       //altered some of the design features of the repo found online
     fontSize: SIZES.xLarge,
     color: COLORS.secondary,
     textAlign: "center"
   },
-  welcomeMessage: {
+  presetMessage: {
     fontFamily: FONT.bold,
     fontSize: SIZES.xxLarge,
     color: COLORS.primary,
