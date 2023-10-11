@@ -25,6 +25,7 @@ const Welcome = () => {
         <Text style={styles.presetMessage}>Select your preset:</Text>
       </View>
 
+      {/*Search bar*/}
       {/* <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
@@ -42,7 +43,7 @@ const Welcome = () => {
             style={styles.searchBtnImage}
           />
         </TouchableOpacity>
-      </View> */}
+  </View> */}
 
       <View style={styles.tabsContainer}>
         <FlatList 
