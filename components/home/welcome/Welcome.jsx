@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { 
   View,
   Text,
@@ -11,12 +10,10 @@ import { useRouter } from 'expo-router';
 import styles from './welcome.style';
 import { icons, SIZES } from '../../../constants';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
-const presetTypes = ["Preset 1", "Preset 2", "Preset 3"]
+import Preset from '../preset/Preset';
 
 const Welcome = () => {
   const router = useRouter();
-  const [activePresetType, setActivePresetType] = useState('Full-time')
 
   return (
     <View>
@@ -44,26 +41,7 @@ const Welcome = () => {
           />
         </TouchableOpacity>
   </View> */}
-
-      <View style={styles.tabsContainer}>
-        <FlatList 
-          data={presetTypes}
-          renderItem={({ item }) => (
-            <TouchableOpacity
-              style={styles.tab(activePresetType, item)}
-              onPress={() => {
-                setActivePresetType(item);
-                router.push(`/search/${item}`)
-              }}
-            >
-              <Text style={styles.tabText(activePresetType, item)}>{item}</Text>
-            </TouchableOpacity>
-          )}
-          keyExtractor={item => item}
-          contentContainerStyle={{ rowGap: SIZES.xLarge}}
-          vertical
-        />
-      </View>  
+ 
     </View>
   )
 }

@@ -24,6 +24,22 @@ const styles = StyleSheet.create({
   cardsContainer: {
     marginTop: SIZES.medium,
   },
+  tabsContainer: {
+    width: "100%",
+    marginTop: SIZES.xxLarge,
+  },
+  tab: (activeJobType, item) => ({
+    paddingVertical: SIZES.large,
+    paddingHorizontal: SIZES.large,
+    borderRadius: SIZES.xxLarge,
+    borderWidth: 2,
+    borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray2,
+  }),
+  tabText: (activeJobType, item) => ({
+    textAlign: "center",
+    fontFamily: FONT.xLarge,
+    color: activeJobType === item ? COLORS.secondary : COLORS.black,
+  }),
 });
 
 export default styles;
